@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edumarquezm's project page</title>
+</head>
+
+<body>
+
+    <style>
+
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2C3E50;
+            margin-bottom: 50px;
+        }
+
+        .button-container {
+            display: grid;
+            grid-template-columns: 1;
+            gap: 30px;
+            justify-content: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .button {
+            display: block;
+            text-align: center;
+            background-color: #3498db;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+            .button:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .button img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                transition: opacity 0.3s ease;
+            }
+
+                .button img:hover {
+                    opacity: 0.8;
+                }
+
+            .button p {
+                font-size: 18px;
+                color: white;
+                background-color: darkslateblue;
+                padding: 10px;
+                margin: 0;
+            }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .button-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+    <h1>Edu's Projects (More coming soon :)  )</h1>
+    <div class="button-container">
+        <a href="MainGuidePage.html" class="button">
+            <img src="https://valenciacollege.edu/images/about/sustainability/osceola.jpeg">
+            <p>Unofficial Guide to Computer Science at Valencia College</p>
+        </a>
+    </div>
+</body>
+</html>
